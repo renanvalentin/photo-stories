@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Image loading 1`] = `
+<div>
+  loading
+</div>
+`;
+
+exports[`Storyshots Image with image 1`] = `
+<img
+  alt="crazy cat!"
+  height="100%"
+  src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+  width="100%"
+/>
+`;
+
+exports[`Storyshots Photo with some emoji 1`] = `
+<button
+  className="css-1yjiefr"
+  onClick={[Function]}
+>
+  😀 😎 👍 💯
+</button>
+`;
+
+exports[`Storyshots Photo with text 1`] = `
+<button
+  className="css-1yjiefr"
+  onClick={[Function]}
+>
+  Hello Button
+</button>
+`;
