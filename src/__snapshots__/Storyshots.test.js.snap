@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Image full interaction 1`] = `
+exports[`Storyshots Image default 1`] = `
 <img
   alt="crazy cat!"
   height="auto"
@@ -40,4 +40,10 @@ exports[`Storyshots Photo with text 1`] = `
 >
   Hello Button
 </button>
+`;
+
+exports[`Storyshots Spinner default 1`] = `
+<div>
+  loading
+</div>
 `;

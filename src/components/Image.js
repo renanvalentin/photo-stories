@@ -2,6 +2,8 @@
 
 import React, { Component } from "react";
 
+import Spinner from "./Spinner";
+
 type ImageRenderProps = {
   width: string,
   height: string,
@@ -12,7 +14,7 @@ type ImageRenderProps = {
 
 export const ImageRender = (props: ImageRenderProps) => {
   return props.loading ? (
-    <div>loading</div>
+    <Spinner />
   ) : (
     <img
       src={props.src}

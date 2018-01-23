@@ -32,4 +32,4 @@ storiesOf("Image", module)
       alt={img.description}
     />
   ))
-  .add("full interaction", () => <Image src={img.url} alt={img.description} />);
+  .add("default", () => <Image src={img.url} alt={img.description} />);
