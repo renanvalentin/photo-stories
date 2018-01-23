@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-type Props = {
+type ImageRenderProps = {
   width: string,
   height: string,
   loading: boolean,
@@ -12,17 +12,58 @@ type Props = {
   alt: string
 };
 
-export class Image extends Component<Props> {
+export const ImageRender = (props: ImageRenderProps) => {
+  return props.loading ? (
+    <div>loading</div>
+  ) : (
+    <img
+      src={props.src}
+      width={props.width}
+      height={props.height}
+      alt={props.alt}
+    />
+  );
+};
+
+type ImageProps = {
+  width: string,
+  height: string,
+  src: string,
+  alt: string
+};
+
+type State = {
+  loading: boolean
+};
+
+class Image extends Component<ImageProps, State> {
+  state = {
+    loading: true
+  };
+
+  static defaultProps = {
+    width: "auto",
+    height: "auto"
+  };
+
+  componentDidMount() {
+    const image = new window.Image();
+
+    image.onload = () => this.setState({ loading: false });
+    image.src = this.props.src;
+  }
+
   render() {
-    return this.props.loading ? (
-      <div>loading</div>
-    ) : (
-      <img
-        src={this.props.src}
+    return (
+      <ImageRender
         width={this.props.width}
         height={this.props.height}
+        loading={this.state.loading}
+        src={this.props.src}
         alt={this.props.alt}
       />
     );
   }
 }
+
+export default Image;

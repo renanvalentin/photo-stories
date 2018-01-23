@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Image full interaction 1`] = `
+<img
+  alt="crazy cat!"
+  height="auto"
+  src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+  width="auto"
+/>
+`;
+
 exports[`Storyshots Image loading 1`] = `
 <div>
   loading
