@@ -1,0 +1,12 @@
+.Photo {
+  width: 100%;
+  height: 100%;
+}
+
+.Photo-description {
+  display: none;
+}
+
+.Photo-description--hover {
+  display: block;
+}
