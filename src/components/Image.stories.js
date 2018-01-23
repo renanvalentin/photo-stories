@@ -3,7 +3,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import Image, { ImageRender } from "./Image";
+import ImageContainer, { Image } from "./Image";
 
 const img = {
   url: "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
@@ -12,7 +12,7 @@ const img = {
 
 storiesOf("Image", module)
   .add("loading", () => (
-    <ImageRender
+    <Image
       width="100%"
       height="100%"
       loading
@@ -21,7 +21,7 @@ storiesOf("Image", module)
     />
   ))
   .add("with image", () => (
-    <ImageRender
+    <Image
       width="100%"
       height="100%"
       loading={false}
@@ -29,4 +29,4 @@ storiesOf("Image", module)
       alt={img.description}
     />
   ))
-  .add("default", () => <Image src={img.url} alt={img.description} />);
+  .add("default", () => <ImageContainer src={img.url} alt={img.description} />);

@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 import Spinner from "./Spinner";
 
-type ImageRenderProps = {
+type ImageProps = {
   width: string,
   height: string,
   loading: boolean,
@@ -12,7 +12,7 @@ type ImageRenderProps = {
   alt: string
 };
 
-export const ImageRender = (props: ImageRenderProps) => {
+export const Image = (props: ImageProps) => {
   return props.loading ? (
     <Spinner />
   ) : (
@@ -25,7 +25,7 @@ export const ImageRender = (props: ImageRenderProps) => {
   );
 };
 
-type ImageProps = {
+type ImageContainerProps = {
   width: string,
   height: string,
   src: string,
@@ -36,7 +36,7 @@ type State = {
   loading: boolean
 };
 
-class Image extends Component<ImageProps, State> {
+class ImageContainer extends Component<ImageContainerProps, State> {
   state = {
     loading: true
   };
@@ -55,7 +55,7 @@ class Image extends Component<ImageProps, State> {
 
   render() {
     return (
-      <ImageRender
+      <Image
         width={this.props.width}
         height={this.props.height}
         loading={this.state.loading}
@@ -66,4 +66,4 @@ class Image extends Component<ImageProps, State> {
   }
 }
 
-export default Image;
+export default ImageContainer;
