@@ -1,12 +1,12 @@
 // @flow
 
 import React, { Component } from "react";
-import classNames from "classnames";
 
 import Spinner from "../components/Spinner";
 import * as types from "../types";
 
 import Photo from "./Photo";
+import { fetchPhotos } from "./services";
 import "./PhotoStoriesView.css";
 
 type PhotoStoriesViewProps = {
@@ -27,11 +27,7 @@ export const List = (props: PhotoStoriesViewProps) => {
     <div className="PhotoStoriesView__List-items">
       {props.photos.map(photo => (
         <div className="PhotoStoriesView__List-item">
-          <Photo
-            thumb={photo.thumb}
-            image={photo.image}
-            description={photo.description}
-          />
+          <Photo thumb={photo.thumb} image={photo.image} title={photo.title} />
         </div>
       ))}
     </div>
@@ -63,30 +59,32 @@ type Props = {
 };
 
 type State = {
-  hoveringThumb: boolean,
-  showingImage: boolean
+  photos: Array<types.Photo>,
+  loading: boolean
 };
 
 class PhotoContainer extends Component<Props, State> {
   state = {
-    hoveringThumb: false,
-    showingImage: false
+    photos: [],
+    loading: true
   };
 
-  toggleDescriptionVisibility = (state: boolean) => {
-    this.setState({
-      hoveringThumb: state
+  componentDidMount() {
+    fetchPhotos().then(photos => {
+      this.setState({
+        photos,
+        loading: false
+      });
     });
-  };
-
-  toggleImageVisibility = () => {
-    this.setState({
-      showingImage: !this.state.showingImage
-    });
-  };
+  }
 
   render() {
-    return <PhotoStoriesView loading photos={[]} />;
+    return (
+      <PhotoStoriesView
+        loading={this.state.loading}
+        photos={this.state.photos}
+      />
+    );
   }
 }
 

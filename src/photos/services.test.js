@@ -45,7 +45,7 @@ describe("Services", () => {
           width: data.images.original.width,
           height: data.images.original.height
         },
-        description: data.title
+        title: data.title
       }
     ]);
   });

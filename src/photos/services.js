@@ -2,9 +2,8 @@
 
 import * as types from "../types";
 
-const query = "cat";
 const apiKey = "dc6zaTOxFJmzC";
-const url = `http://api.giphy.com/v1/stickers/search?api_key=${apiKey}&q=${query}`;
+const url = `http://api.giphy.com/v1/stickers/trending?api_key=${apiKey}`;
 
 export const fetchPhotos = (): Promise<Array<types.Photo>> => {
   return fetch(url)
@@ -21,7 +20,7 @@ export const fetchPhotos = (): Promise<Array<types.Photo>> => {
           width: item.images.original.width,
           height: item.images.original.height
         },
-        description: item.title
+        title: item.title
       }))
     );
 };
