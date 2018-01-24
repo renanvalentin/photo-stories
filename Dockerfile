@@ -10,11 +10,6 @@ ENV NPM_CONFIG_PREFIX=$HOME/.npm-global
 USER app
 WORKDIR $HOME/photo-stories
 
-# RUN mkdir -p $HOME/.flow-typed/repo && \
-#     cd $HOME/.flow-typed/repo && \
-#     git clone https://github.com/flowtype/flow-typed.git . && \
-#     cd $HOME/mrp
-
 ADD ./package.json ./yarn.* ./
 ADD ./.flowconfig ./
 

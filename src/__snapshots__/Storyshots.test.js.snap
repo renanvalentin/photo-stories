@@ -1,5 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots App with thumb 1`] = `
+<div>
+  <div
+    className="App"
+  >
+    <header
+      className="App-header"
+    >
+      <img
+        alt="logo"
+        className="App-logo"
+        src="logo.svg"
+      />
+      <h1
+        className="App-title"
+      >
+        Welcome to React
+      </h1>
+    </header>
+  </div>
+  <section>
+    <header
+      className="PhotoStoriesView-header"
+    >
+      <h1
+        className="PhotoStoriesView-title"
+      >
+        Photo stories
+      </h1>
+    </header>
+    <div
+      className="PhotoStoriesView-content"
+    >
+      <div
+        className="Spinner--container"
+      >
+        <div
+          className="Spinner"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Image default 1`] = `
 <img
   alt="crazy cat!"
@@ -10,8 +57,14 @@ exports[`Storyshots Image default 1`] = `
 `;
 
 exports[`Storyshots Image loading 1`] = `
-<div>
-  loading
+<div
+  className="Spinner--container"
+>
+  <div
+    className="Spinner"
+  >
+    Loading...
+  </div>
 </div>
 `;
 
@@ -52,78 +105,1450 @@ Array [
 ]
 `;
 
+exports[`Storyshots Photo Stories View empty 1`] = `
+<section>
+  <header
+    className="PhotoStoriesView-header"
+  >
+    <h1
+      className="PhotoStoriesView-title"
+    >
+      Photo stories
+    </h1>
+  </header>
+  <div
+    className="PhotoStoriesView-content"
+  >
+    <span
+      className="PhotoStoriesView__List-empty"
+    >
+      No Stories... Game over :(
+    </span>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Photo Stories View loading 1`] = `
+<section>
+  <header
+    className="PhotoStoriesView-header"
+  >
+    <h1
+      className="PhotoStoriesView-title"
+    >
+      Photo stories
+    </h1>
+  </header>
+  <div
+    className="PhotoStoriesView-content"
+  >
+    <div
+      className="Spinner--container"
+    >
+      <div
+        className="Spinner"
+      >
+        Loading...
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Photo Stories View with items 1`] = `
+<section>
+  <header
+    className="PhotoStoriesView-header"
+  >
+    <h1
+      className="PhotoStoriesView-title"
+    >
+      Photo stories
+    </h1>
+  </header>
+  <div
+    className="PhotoStoriesView-content"
+  >
+    <div
+      className="PhotoStoriesView__List-items"
+    >
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div
+        className="PhotoStoriesView__List-item"
+      >
+        <div
+          className="Photo"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="Photo-thumb"
+            onClick={[Function]}
+          >
+            <img
+              alt="crazy cat!"
+              height={200}
+              src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+              width={200}
+            />
+            <figcaption
+              className="Photo-description"
+            >
+              crazy cat!
+            </figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Photo sample 1`] = `
 <div
   className="Photo"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
   <div
     className="Photo-thumb"
     onClick={[Function]}
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <img
       alt="crazy cat!"
-      height="auto"
+      height={200}
       src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
-      width="auto"
+      width={200}
     />
+    <figcaption
+      className="Photo-description"
+    >
+      crazy cat!
+    </figcaption>
   </div>
-  <figcaption
-    className="Photo-description"
-  >
-    crazy cat!
-  </figcaption>
 </div>
 `;
 
 exports[`Storyshots Photo with hover 1`] = `
 <div
   className="Photo"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
   <div
     className="Photo-thumb"
     onClick={[Function]}
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <img
       alt="crazy cat!"
-      height="auto"
+      height={200}
       src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
-      width="auto"
+      width={200}
     />
+    <figcaption
+      className="Photo-description Photo-description--hover"
+    >
+      crazy cat!
+    </figcaption>
   </div>
-  <figcaption
-    className="Photo-description Photo-description--hover"
-  >
-    crazy cat!
-  </figcaption>
 </div>
 `;
 
 exports[`Storyshots Photo with lightbox 1`] = `
 <div
   className="Photo"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
   <div
     className="Photo-thumb"
     onClick={[Function]}
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <img
       alt="crazy cat!"
-      height="auto"
+      height={200}
       src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
-      width="auto"
+      width={200}
     />
+    <figcaption
+      className="Photo-description"
+    >
+      crazy cat!
+    </figcaption>
   </div>
-  <figcaption
-    className="Photo-description"
-  >
-    crazy cat!
-  </figcaption>
   <button
     className="Modal-close"
     onClick={[Function]}
@@ -138,9 +1563,9 @@ exports[`Storyshots Photo with lightbox 1`] = `
     >
       <img
         alt="crazy cat!"
-        height="auto"
+        height={720}
         src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
-        width="auto"
+        width={720}
       />
     </div>
   </div>
@@ -153,30 +1578,36 @@ exports[`Storyshots Photo with lightbox 1`] = `
 exports[`Storyshots Photo with thumb 1`] = `
 <div
   className="Photo"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
   <div
     className="Photo-thumb"
     onClick={[Function]}
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <img
       alt="crazy cat!"
-      height="auto"
+      height={200}
       src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
-      width="auto"
+      width={200}
     />
+    <figcaption
+      className="Photo-description"
+    >
+      crazy cat!
+    </figcaption>
   </div>
-  <figcaption
-    className="Photo-description"
-  >
-    crazy cat!
-  </figcaption>
 </div>
 `;
 
 exports[`Storyshots Spinner default 1`] = `
-<div>
-  loading
+<div
+  className="Spinner--container"
+>
+  <div
+    className="Spinner"
+  >
+    Loading...
+  </div>
 </div>
 `;

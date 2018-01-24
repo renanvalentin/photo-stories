@@ -25,8 +25,11 @@ export const List = (props: PhotoStoriesViewProps) => {
 
   return props.photos.length > 0 ? (
     <div className="PhotoStoriesView__List-items">
-      {props.photos.map(photo => (
-        <div className="PhotoStoriesView__List-item">
+      {props.photos.map((photo, index) => (
+        <div
+          className="PhotoStoriesView__List-item"
+          key={`photo:${photo.thumb}:${index}`}
+        >
           <Photo thumb={photo.thumb} image={photo.image} title={photo.title} />
         </div>
       ))}
@@ -63,19 +66,29 @@ type State = {
   loading: boolean
 };
 
-class PhotoContainer extends Component<Props, State> {
+class PhotoStoriesViewContainer extends Component<Props, State> {
   state = {
     photos: [],
     loading: true
   };
 
+  mounted: boolean;
+
   componentDidMount() {
+    this.mounted = true;
+
     fetchPhotos().then(photos => {
+      if (!this.mounted) return;
+
       this.setState({
         photos,
         loading: false
       });
     });
+  }
+
+  componentWillUnmount() {
+    this.mounted = false;
   }
 
   render() {
@@ -88,4 +101,4 @@ class PhotoContainer extends Component<Props, State> {
   }
 }
 
-export default PhotoContainer;
+export default PhotoStoriesViewContainer;
