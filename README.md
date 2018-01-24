@@ -34,11 +34,11 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 
-#### Docker
+## Docker
 
 Make sure to have [Docker Compose](https://docs.docker.com/compose/install/) installed on your machine.
 
-#### Demo
+### Demo
 
 - Run the demo:
 
@@ -48,7 +48,7 @@ Make sure to have [Docker Compose](https://docs.docker.com/compose/install/) ins
 - Navigate to http://localhost:3000/
 
 
-#### Storybook
+### Storybook
 
 - Run storybook:
 
@@ -57,7 +57,7 @@ Make sure to have [Docker Compose](https://docs.docker.com/compose/install/) ins
   ```
 - Navigate to http://localhost:9009/
 
-#### Tests
+### Tests
 
 - Edit tests in `./test/tests`
 - Run the tests:
