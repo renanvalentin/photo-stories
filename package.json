@@ -12,6 +12,7 @@
     "prettier": "^1.10.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0"
   },
   "scripts": {
@@ -38,6 +39,7 @@
     "@storybook/addons": "^3.3.10",
     "@storybook/react": "^3.3.10",
     "babel-core": "^6.26.0",
-    "react-test-renderer": "^16.2.0"
+    "react-test-renderer": "^16.2.0",
+    "storybook-router": "^0.3.2"
   }
 }
