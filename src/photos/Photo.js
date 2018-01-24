@@ -5,13 +5,14 @@ import classNames from "classnames";
 
 import Image from "../components/Image";
 import Modal from "../components/Modal";
+import * as types from "../types";
 
 import "./Photo.css";
 
 type PhotoProps = {
-  thumb: string,
-  image: string,
-  description: string,
+  thumb: types.Image,
+  image: types.Image,
+  title: string,
   showingImage: boolean,
   hovering: boolean,
   onThumbClick: SyntheticEvent<HTMLDivElement> | (() => void),
@@ -28,32 +29,31 @@ export const Photo = (props: PhotoProps) => {
     >
       <div className="Photo-thumb" onClick={props.onThumbClick}>
         <Image
-          src={props.thumb}
-          alt={props.description}
-          width="100%"
-          height="100%"
+          src={props.thumb.url}
+          width={props.thumb.width}
+          height={props.thumb.height}
+          alt={props.title}
         />
         <figcaption
           className={classNames("Photo-description", {
             "Photo-description--hover": props.hovering
           })}
         >
-          {props.description}
+          {props.title}
         </figcaption>
       </div>
       {props.showingImage && (
         <Modal onClose={props.onImageClose}>
-          <Image src={props.image} alt={props.description} />
+          <Image
+            src={props.image.url}
+            width={props.image.width}
+            height={props.image.height}
+            alt={props.title}
+          />
         </Modal>
       )}
     </div>
   );
-};
-
-type Props = {
-  thumb: string,
-  image: string,
-  description: string
 };
 
 type State = {
@@ -61,7 +61,7 @@ type State = {
   showingImage: boolean
 };
 
-class PhotoContainer extends Component<Props, State> {
+class PhotoContainer extends Component<types.Photo, State> {
   state = {
     hoveringThumb: false,
     showingImage: false
@@ -84,7 +84,7 @@ class PhotoContainer extends Component<Props, State> {
       <Photo
         thumb={this.props.thumb}
         image={this.props.image}
-        description={this.props.description}
+        title={this.props.title}
         showingImage={this.state.showingImage}
         hovering={this.state.hoveringThumb}
         onThumbClick={this.toggleImageVisibility}
