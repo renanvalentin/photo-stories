@@ -1,0 +1,53 @@
+.PhotoStoriesView-content {
+  padding-top: 40px;
+}
+
+.PhotoStoriesView__List-items {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.PhotoStoriesView__List-items:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.PhotoStoriesView__List-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  float: left;
+}
+
+@media (min-width: 320px) {
+  .PhotoStoriesView__List-item {
+    width: 100%;
+    float: none;
+
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .PhotoStoriesView__List-item {
+    width: auto;
+
+    margin: 20px;
+  }
+}
+
+.PhotoStoriesView__List-empty {
+  display: block;
+
+  color: #ebebeb;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  text-align: center;
+}
