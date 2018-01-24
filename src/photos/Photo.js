@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import classNames from "classnames";
 
 import Image from "../components/Image";
+import Modal from "../components/Modal";
 
 import "./Photo.css";
 
@@ -37,9 +38,9 @@ export const Photo = (props: PhotoProps) => {
         {props.description}
       </figcaption>
       {props.showingImage && (
-        <div className="Photo-image" onClick={props.onImageClose}>
+        <Modal onClose={props.onImageClose}>
           <Image src={props.image} alt={props.description} />
-        </div>
+        </Modal>
       )}
     </div>
   );
