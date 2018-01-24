@@ -15,28 +15,32 @@ type PhotoProps = {
   showingImage: boolean,
   hovering: boolean,
   onThumbClick: SyntheticEvent<HTMLDivElement> | (() => void),
-  onDescriptionToggle: SyntheticEvent<HTMLDivElement> | (() => void),
+  onDescriptionToggle: (state: boolean) => void,
   onImageClose: () => void
 };
 
 export const Photo = (props: PhotoProps) => {
   return (
-    <div className="Photo">
-      <div
-        className="Photo-thumb"
-        onClick={props.onThumbClick}
-        onMouseEnter={props.onDescriptionToggle}
-        onMouseLeave={props.onDescriptionToggle}
-      >
-        <Image src={props.thumb} alt={props.description} />
+    <div
+      className="Photo"
+      onMouseEnter={() => props.onDescriptionToggle(true)}
+      onMouseLeave={() => props.onDescriptionToggle(false)}
+    >
+      <div className="Photo-thumb" onClick={props.onThumbClick}>
+        <Image
+          src={props.thumb}
+          alt={props.description}
+          width="100%"
+          height="100%"
+        />
+        <figcaption
+          className={classNames("Photo-description", {
+            "Photo-description--hover": props.hovering
+          })}
+        >
+          {props.description}
+        </figcaption>
       </div>
-      <figcaption
-        className={classNames("Photo-description", {
-          "Photo-description--hover": props.hovering
-        })}
-      >
-        {props.description}
-      </figcaption>
       {props.showingImage && (
         <Modal onClose={props.onImageClose}>
           <Image src={props.image} alt={props.description} />
@@ -63,9 +67,9 @@ class PhotoContainer extends Component<Props, State> {
     showingImage: false
   };
 
-  toggleDescriptionVisibility = () => {
+  toggleDescriptionVisibility = (state: boolean) => {
     this.setState({
-      hoveringThumb: !this.state.hoveringThumb
+      hoveringThumb: state
     });
   };
 
