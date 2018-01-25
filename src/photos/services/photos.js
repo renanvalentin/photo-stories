@@ -2,8 +2,8 @@
 
 import type { PhotoType } from "../../types";
 
-const apiKey = "dc6zaTOxFJmzC";
-const url = `http://api.giphy.com/v1/stickers/trending?api_key=${apiKey}`;
+const apiKey = "3Ll12q7lfpyRNOxgdwJTHC0sx9YuX2bj";
+const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=cat&limit=25&offset=0&rating=G&lang=en`;
 
 export const fetchPhotos = (): Promise<Array<PhotoType>> => {
   return fetch(url)
