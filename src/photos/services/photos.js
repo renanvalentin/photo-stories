@@ -11,9 +11,9 @@ export const fetchPhotos = (): Promise<Array<PhotoType>> => {
     .then(data =>
       data.data.map(item => ({
         thumb: {
-          url: item.images.preview_gif.url,
-          width: item.images.preview_gif.width,
-          height: item.images.preview_gif.height
+          url: item.images.fixed_width.url,
+          width: item.images.fixed_width.width,
+          height: item.images.fixed_width.height
         },
         image: {
           url: item.images.original.url,
