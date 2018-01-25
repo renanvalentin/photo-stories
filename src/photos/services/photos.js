@@ -17,8 +17,8 @@ export const fetchPhotos = (): Promise<Array<PhotoType>> => {
         },
         image: {
           url: item.images.original.url,
-          width: item.images.original.width,
-          height: item.images.original.height
+          width: item.images.original_mp4.width,
+          height: item.images.original_mp4.height
         },
         title: item.title
       }))

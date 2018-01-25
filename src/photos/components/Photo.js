@@ -26,6 +26,10 @@ export const Photo = (props: Props) => {
       className="Photo"
       onMouseEnter={() => props.onDescriptionToggle(true)}
       onMouseLeave={() => props.onDescriptionToggle(false)}
+      style={{
+        width: `${props.thumb.width}px`,
+        height: `${props.thumb.height}px`
+      }}
     >
       <div className="Photo-thumb" onClick={props.onThumbClick}>
         <Image
