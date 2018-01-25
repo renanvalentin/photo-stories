@@ -43,9 +43,6 @@ const List = (props: Props) => {
 export const PhotoStoriesView = (props: Props) => {
   return (
     <section>
-      <header className="PhotoStoriesView-header">
-        <h1 className="PhotoStoriesView-title">Photo stories</h1>
-      </header>
       <div className="PhotoStoriesView-content">
         <Loader loading={props.loading} />
         <List loading={props.loading} photos={props.photos} />
