@@ -47,7 +47,11 @@ export const Photo = (props: Props) => {
         </figcaption>
       </div>
       {props.showingImage && (
-        <Modal onClose={props.onImageClose}>
+        <Modal
+          onClose={props.onImageClose}
+          width={props.image.width}
+          height={props.image.height}
+        >
           <Image
             src={props.image.url}
             width={props.image.width}

@@ -12,8 +12,14 @@ const img = {
   description: "crazy cat!"
 };
 
-storiesOf("ui.containers.Modal", module).add("default", () => (
-  <Modal onClose={action("modal closed!")}>
-    <Image src={img.url} alt={img.description} />
-  </Modal>
-));
+storiesOf("ui.containers.Modal", module)
+  .add("default", () => (
+    <Modal onClose={action("modal closed!")}>
+      <Image src={img.url} alt={img.description} />
+    </Modal>
+  ))
+  .add("with size", () => (
+    <Modal onClose={action("modal closed!")} width="640px" height="480px">
+      <Image src={img.url} alt={img.description} />
+    </Modal>
+  ));
