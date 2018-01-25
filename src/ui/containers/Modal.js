@@ -38,7 +38,7 @@ export class Modal extends React.Component<Props> {
     return ReactDOM.createPortal(
       <React.Fragment>
         <button className="Modal-close" onClick={this.props.onClose}>
-          X
+          [X] close
         </button>
         <div
           className="Modal"
