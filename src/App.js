@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import PhotoStoriesView from "./photos/PhotoStoriesView";
+import { PhotoStoriesView } from "./photos";
 import logo from "./logo.svg";
 import "./App.css";
 

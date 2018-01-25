@@ -1,17 +1,17 @@
 // @flow
 
-import React, { Component } from "react";
+import React from "react";
 import classNames from "classnames";
 
-import Image from "../components/Image";
-import Modal from "../components/Modal";
-import * as types from "../types";
+import { Image } from "../../ui";
+import { Modal } from "../../ui";
+import type { ImageType } from "../../types";
 
 import "./Photo.css";
 
-type PhotoProps = {
-  thumb: types.Image,
-  image: types.Image,
+type Props = {
+  thumb: ImageType,
+  image: ImageType,
   title: string,
   showingImage: boolean,
   hovering: boolean,
@@ -20,7 +20,7 @@ type PhotoProps = {
   onImageClose: () => void
 };
 
-export const Photo = (props: PhotoProps) => {
+export const Photo = (props: Props) => {
   return (
     <div
       className="Photo"
@@ -55,44 +55,3 @@ export const Photo = (props: PhotoProps) => {
     </div>
   );
 };
-
-type State = {
-  hoveringThumb: boolean,
-  showingImage: boolean
-};
-
-class PhotoContainer extends Component<types.Photo, State> {
-  state = {
-    hoveringThumb: false,
-    showingImage: false
-  };
-
-  toggleDescriptionVisibility = (state: boolean) => {
-    this.setState({
-      hoveringThumb: state
-    });
-  };
-
-  toggleImageVisibility = () => {
-    this.setState({
-      showingImage: !this.state.showingImage
-    });
-  };
-
-  render() {
-    return (
-      <Photo
-        thumb={this.props.thumb}
-        image={this.props.image}
-        title={this.props.title}
-        showingImage={this.state.showingImage}
-        hovering={this.state.hoveringThumb}
-        onThumbClick={this.toggleImageVisibility}
-        onImageClose={this.toggleImageVisibility}
-        onDescriptionToggle={this.toggleDescriptionVisibility}
-      />
-    );
-  }
-}
-
-export default PhotoContainer;

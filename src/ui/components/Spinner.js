@@ -9,5 +9,3 @@ export const Spinner = () => (
     <div className="Spinner">Loading...</div>
   </div>
 );
-
-export default Spinner;

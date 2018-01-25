@@ -1,6 +1,6 @@
-import { fetchPhotos } from "./services";
+import { fetchPhotos } from "./photos";
 
-describe("Services", () => {
+describe("photos.services.Services", () => {
   const data = {
     title: "Cat",
     images: {

@@ -4,7 +4,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
-import PhotoContainer, { Photo } from "./Photo";
+import { Photo } from "./Photo";
 
 const photo = {
   image: {
@@ -20,7 +20,7 @@ const photo = {
   title: "crazy cat!"
 };
 
-storiesOf("Photo", module)
+storiesOf("photos.components.Photo", module)
   .add("with thumb", () => (
     <Photo
       thumb={photo.thumb}
@@ -55,12 +55,5 @@ storiesOf("Photo", module)
       onThumbClick={action("thumb clicked!")}
       onDescriptionToggle={action("thumb toggled!")}
       onImageClose={action("image closed!")}
-    />
-  ))
-  .add("sample", () => (
-    <PhotoContainer
-      thumb={photo.thumb}
-      image={photo.image}
-      title={photo.title}
     />
   ));

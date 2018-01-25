@@ -10,7 +10,7 @@ type Props = {
   onClose: SyntheticEvent<HTMLDivElement> | (() => void)
 };
 
-class Modal extends React.Component<Props> {
+export class Modal extends React.Component<Props> {
   el: HTMLDivElement;
 
   constructor(props: Props) {
@@ -42,5 +42,3 @@ class Modal extends React.Component<Props> {
     );
   }
 }
-
-export default Modal;

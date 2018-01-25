@@ -1,11 +1,11 @@
 // @flow
 
-import * as types from "../types";
+import type { PhotoType } from "../../types";
 
 const apiKey = "dc6zaTOxFJmzC";
 const url = `http://api.giphy.com/v1/stickers/trending?api_key=${apiKey}`;
 
-export const fetchPhotos = (): Promise<Array<types.Photo>> => {
+export const fetchPhotos = (): Promise<Array<PhotoType>> => {
   return fetch(url)
     .then(res => res.json())
     .then(data =>

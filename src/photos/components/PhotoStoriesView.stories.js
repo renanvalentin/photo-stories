@@ -2,9 +2,8 @@
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
 
-import PhotoContainer, { PhotoStoriesView } from "./PhotoStoriesView";
+import { PhotoStoriesView } from "./PhotoStoriesView";
 
 const photo = {
   image: {
@@ -22,7 +21,7 @@ const photo = {
 
 const photos = Array.from({ length: 50 }, () => photo);
 
-storiesOf("Photo Stories View", module)
+storiesOf("photos.components.Photo Stories View", module)
   .add("loading", () => <PhotoStoriesView loading photos={[]} />)
   .add("with items", () => <PhotoStoriesView loading={false} photos={photos} />)
   .add("empty", () => <PhotoStoriesView loading={false} photos={[]} />);
