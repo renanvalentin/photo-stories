@@ -24,7 +24,8 @@ export class Photo extends Component<PhotoType, State> {
 
   toggleImageVisibility = () => {
     this.setState({
-      showingImage: !this.state.showingImage
+      showingImage: !this.state.showingImage,
+      hoveringThumb: false
     });
   };
 
