@@ -2,24 +2,18 @@
   padding-top: 40px;
 }
 
-.PhotoStoriesView__List-items {
-  columns: auto;
-
-  column-width: 200px;
-  column-gap: 10px;
-
-  column-fill: balance;
-}
-
-.PhotoStoriesView__List-item {
-  margin-bottom: 40px;
-}
-
 @media (min-width: 320px) {
   .PhotoStoriesView__List-items {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    columns: 2;
+
+    column-width: 100px;
+    column-gap: 5px;
+
+    column-fill: balance;
+  }
+
+  .PhotoStoriesView__List-item {
+    margin-bottom: 5px;
   }
 }
 
@@ -27,7 +21,18 @@
   .PhotoStoriesView__List-items {
     display: block;
 
+    columns: auto;
+
+    column-width: 200px;
+    column-gap: 10px;
+
+    column-fill: balance;
+
     padding-left: 25px; /* column will add an extra padding on the last column */
+  }
+
+  .PhotoStoriesView__List-item {
+    margin-bottom: 40px;
   }
 }
 
