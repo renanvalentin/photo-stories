@@ -1,4 +1,10 @@
-This is a prototype to test the new features from React 16.
+![](https://media1.giphy.com/media/zhYV8O6j5CQ8/giphy.gif)
+
+## Live! ! !
+
+[http://catify.surge.sh/](http://catify.surge.sh/)
+
+This is a prototype to test new features from React 16.
 
 ## Available Scripts
 
@@ -11,7 +17,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
 
 ### `npm storybook`
 
@@ -33,34 +38,34 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-
 ## Docker
 
 Make sure to have [Docker Compose](https://docs.docker.com/compose/install/) installed on your machine.
 
 ### Demo
 
-- Run the demo:
+* Run the demo:
 
   ```bash
   make demo
   ```
-- Navigate to http://localhost:3000/
 
+* Navigate to http://localhost:3000/
 
 ### Storybook
 
-- Run storybook:
+* Run storybook:
 
   ```bash
   make storybook
   ```
-- Navigate to http://localhost:9009/
+
+* Navigate to http://localhost:9009/
 
 ### Tests
 
-- Edit tests in `./test/tests`
-- Run the tests:
+* Edit tests in `./test/tests`
+* Run the tests:
 
   ```bash
   make test

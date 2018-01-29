@@ -1,10 +1,12 @@
 // @flow
 
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import type { PhotoType } from "../../types";
 import { PhotoStoriesView as PhotoStoriesViewComponent } from "../components/PhotoStoriesView";
 import { fetchPhotos } from "../services/photos";
+
+import { Search } from "./Search";
 
 type Props = {
   thumb: string,
@@ -46,12 +48,21 @@ export class PhotoStoriesView extends Component<Props, State> {
     this.mounted = false;
   }
 
+  updateSearchResult = (photos: Array<PhotoType>) => {
+    this.setState({
+      photos
+    });
+  };
+
   render() {
     return (
-      <PhotoStoriesViewComponent
-        loading={this.state.loading}
-        photos={this.state.photos}
-      />
+      <Fragment>
+        <Search onSearch={this.updateSearchResult} />
+        <PhotoStoriesViewComponent
+          loading={this.state.loading}
+          photos={this.state.photos}
+        />
+      </Fragment>
     );
   }
 }

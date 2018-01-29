@@ -3,9 +3,12 @@
 import type { PhotoType } from "../../types";
 
 const apiKey = "3Ll12q7lfpyRNOxgdwJTHC0sx9YuX2bj";
-const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=cat&limit=25&offset=0&rating=G&lang=en`;
 
-export const fetchPhotos = (): Promise<Array<PhotoType>> => {
+export const fetchPhotos = (
+  query: string = "cat"
+): Promise<Array<PhotoType>> => {
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=25&offset=0&rating=G&lang=en`;
+
   return fetch(url)
     .then(res => res.json())
     .then(data =>
